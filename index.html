@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="page-library">
+    <header class="header">
+        <div class="container">
+            <div class="logo-area">
+                <i class="fa-solid fa-book-open text-blue"></i>
+                <span>Thư viện Số</span>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Tìm kiếm sách...">
+            </div>
+
+            <div class="genre-filter" id="genre-container">
+                </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <p id="results-count" style="margin-bottom: 1rem; color: #525252;">Đang tải...</p>
+        <div class="books-grid" id="books-grid">
+            </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

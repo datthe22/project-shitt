@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc sách</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="page-reader" style="padding-bottom: 80px;">
+    <header class="header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="#" id="back-link" class="btn btn-outline">
+                <i class="fa-solid fa-arrow-left"></i> Quay lại
+            </a>
+            <span id="book-title-header" style="font-weight: bold;">Tên sách</span>
+            <span id="page-indicator">Trang 1</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="reader-page">
+            <div id="reader-text" class="reader-content">
+                </div>
+        </div>
+    </main>
+
+    <footer class="reader-footer">
+        <div class="reader-controls">
+            <button id="prev-btn" class="btn btn-outline">Trước</button>
+            <input type="range" id="page-slider" min="0" value="0">
+            <button id="next-btn" class="btn btn-primary">Tiếp theo</button>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
